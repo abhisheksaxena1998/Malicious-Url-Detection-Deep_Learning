@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Youtube Content Analysis</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet" />
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721679-youtube_108064.png" type="image/png">
+
+    <!-- Custom Stylesheet -->
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light white sticky-top">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/"><i class="fab fa-youtube"> Youtube Content Analysis</i></a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container z-depth-1 my-5 p-5">
+
+                    <!-- Section -->
+                    <section>
+
+                        <i class="fab fa-youtube" style="margin:0 auto;display: block;text-align: center;font-size: 6rem;"></i>
+
+                        <!--First row-->
+                        <div class="row d-flex justify-content-center">
+
+                            <form class="text-center" style="color: #757575;" action="{%  url 'result'  %}" >
+
+                                <div class="col-md-12 col-lg-12 mb-4">
+
+                                    <!-- Material outline input -->
+                                    <div class="md-form md-outline form-lg">
+                                        <input type="text" name="url" class="form-control form-control-lg">
+                                        <label for="text">Product Review Url</label>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="col-md-12 col-lg-12 mb-4">
+                                    
+                                    <button class="btn btn-block btn-primary my-4"  type="submit">Real Time Analysis</button>
+
+                                </div>
+                            </form>
+                            <!-- Form -->
+
+                        </div>
+                        <!--First row-->
+
+                    </section>
+                    <!-- Section -->
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="container my-5">
+
+
+                <!--Section: Block Content-->
+                <section class="dark-grey-text mb-5">
+
+                    <!-- Section heading -->
+                    <h3 class="font-weight-bold text-center mb-5">Product Reviews</h3>
+
+                    <div class="media mb-3">
+                        <img class="card-img-100 rounded-circle z-depth-1-half d-flex mr-3"
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img (8).jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <a>
+                                <h5 class="user-name font-weight-bold">John Doe</h5>
+                            </a>
+                            <!-- Rating -->
+                            <ul class="rating mb-2">
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                            </ul>
+                            <div class="card-data">
+                                <ul class="list-unstyled mb-1">
+                                    <li class="comment-date font-small grey-text">
+                                        <i class="far fa-clock"></i> 05/10/2015</li>
+                                </ul>
+                            </div>
+                            <p class="dark-grey-text article">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut
+                                aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        </div>
+                    </div>
+
+                    <div class="media mb-3">
+                        <img class=" card-img-100 rounded-circle z-depth-1-half d-flex mr-3"
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img (28).jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <a>
+                                <h5 class="user-name font-weight-bold">Martha Smith</h5>
+                            </a>
+                            <!-- Rating -->
+                            <ul class="rating mb-2">
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star grey-text"></i>
+                                </li>
+                            </ul>
+                            <div class="card-data">
+                                <ul class="list-unstyled mb-1">
+                                    <li class="comment-date font-small grey-text">
+                                        <i class="far fa-clock"></i> 05/10/2015</li>
+                                </ul>
+                            </div>
+                            <p class="dark-grey-text article">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut
+                                aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <img class=" card-img-100 rounded-circle z-depth-1-half d-flex mr-3"
+                            src="https://mdbootstrap.com/img/Photos/Avatars/img (30).jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <a>
+                                <h5 class="user-name font-weight-bold">Lily Brown</h5>
+                            </a>
+                            <!-- Rating -->
+                            <ul class="rating mb-2">
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star blue-text"></i>
+                                </li>
+                            </ul>
+                            <div class="card-data">
+                                <ul class="list-unstyled mb-1">
+                                    <li class="comment-date font-small grey-text">
+                                        <i class="far fa-clock"></i> 05/10/2015</li>
+                                </ul>
+                            </div>
+                            <p class="dark-grey-text article">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut
+                                aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        </div>
+                    </div>
+
+                </section>
+                <!--Section: Block Content-->
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <a href="https://mdbootstrap.com/" style="color: white;font-weight: bold;">MD Bootstrap</a>
+            <br />
+            <a href="http://www.freepik.com" style="color: white;font-weight: bold;">Designed by
+                Muskeeters</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+</body>
+
+</html>
