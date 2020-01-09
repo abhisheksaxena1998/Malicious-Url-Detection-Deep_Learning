@@ -25,7 +25,7 @@ SECRET_KEY = '=jnd_b-^gf0&u4(ae*@0s$mmzy=04-ylpvx5e$r=$z8!wo060z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['malacious-url-detector.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['malicious-url-detector.herokuapp.com','127.0.0.1']
 #'automate-proc.herokuapp.com' , '127.0.0.1'
 #ALLOWED_HOSTS = []
 
