@@ -136,7 +136,7 @@ def result(request):
     if arg[0]==1:
         te="Legitimate"
     else:
-        te="Malacious"    
+        te="Malicious"    
     from json.encoder import JSONEncoder
     final_entity = { "predicted_argument": [int(arg[0])]}
     # directly called encode method of JSON
