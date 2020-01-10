@@ -138,13 +138,17 @@ def result(request):
     if arg[0]==1:
         te="Legitimate"
     else:
-        te="Malicious"    
+        te="Malicious"  
+    if arg[0] == 1:
+        mal = True
+    else:
+        mal = False      
     from json.encoder import JSONEncoder
     final_entity = { "predicted_argument": [int(arg[0])]}
     # directly called encode method of JSON
     print (JSONEncoder().encode(final_entity)) 
         
-    return render(request,'result.html',{'result':'Real-time analysis successfull','f2':te})
+    return render(request,'result.html',{'result':'Real-time analysis successfull','f2':te,'mal': mal,'text':text})
 
 def about(request):
     return render(request,'about.html')    
