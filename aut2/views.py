@@ -44,7 +44,7 @@ def home(request):
 def result(request):
     #nm=request.GET['url']
     text=request.GET['url']
-    if len(text)==0:
+    if len(text)<=9:
         return render(request,'errorpage.html')
     aburl=-1
     digits="0123456789"
