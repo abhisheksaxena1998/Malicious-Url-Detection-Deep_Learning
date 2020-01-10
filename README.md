@@ -2,4 +2,4 @@
 Malacious-Url-Detection-Deep_Learning
 
 
-Live on https://malacious-url-detector.herokuapp.com/
+Live on https://malicious-url-detector.herokuapp.com/
