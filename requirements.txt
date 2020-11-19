@@ -18,7 +18,7 @@ Click==7.0
 coala-utils==0.5.1
 colorama==0.4.1
 constantly==15.1.0
-cryptography==2.8
+cryptography==3.2
 cssselect==1.1.0
 cycler==0.10.0
 cymem==2.0.3
